@@ -1,0 +1,85 @@
+/** navbar **/
+.navbar {
+    height: 56px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-box1 {
+    height: 56px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fb-logo {
+    height: 40px;
+    width: 40px;
+    background-image: url(fb\ logo.png);
+    background-size: cover;
+    margin-right: 10px;
+}
+.nav-search {
+    height: 40px;
+    width: 40px;
+    background-color: #E4E6EB;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-box1 input {
+    height: 38px;
+    width: 200px;
+    background-color: #E4E6EB;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-box2 {
+    height: 56px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-box2 i {
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-box3 {
+    height: 56px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-box3 i {
+    height: 40px;
+    width: 40px;
+    background-color: #E4E6EB;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: aliceblue;
+    height: 700px;
+}
