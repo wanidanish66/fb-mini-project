@@ -2,7 +2,8 @@
 
 body {
     background-color: aliceblue;
-    height: 700px;
+    width: auto;
+    height: auto;
 }
 .navbar {
     height: 56px;
@@ -10,6 +11,7 @@ body {
     background-color: white;
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 
@@ -52,16 +54,14 @@ body {
 
 .nav-box2 {
     height: 56px;
-    width: 200px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
 }
 .nav-box2 i {
-    height: 40px;
-    width: 40px;
-    border: 2px solid black;
-    border-radius: 50%;
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,3 +85,25 @@ body {
 }
     
    /** hero section **/
+
+.hero-section {
+    display: flex;
+}   
+   
+.hero-section1 {
+    width: 22%;
+    height: 800px;
+    background-color: aqua;
+}   
+
+.hero-section2 {
+    width: 56%;
+    height: 800px;
+    background-color: aquamarine;
+}
+
+.hero-section3 {
+    width: 22%;
+    height: 800px;
+    background-color: rgb(49, 121, 121);
+}
