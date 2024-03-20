@@ -94,7 +94,26 @@ body {
     width: 22%;
     height: 800px;
     background-color: aqua;
+    padding-top: 30px;
+    padding-left: 30px;
 }   
+.hero-profile {
+    background-image: url(profile.jpg);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: white;
+}
+.hero-section1 a {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.2rem;
+    align-items: center;
+}
+.hero-section1 p {
+    margin-left: 9px;
+}
 
 .hero-section2 {
     width: 56%;
