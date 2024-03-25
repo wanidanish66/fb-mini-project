@@ -106,6 +106,7 @@ body {
     background-color: white;
 }
 .hero-section1 a {
+    margin-left: ;
     display: flex;
     text-decoration: none;
     font-size: 1.2rem;
