@@ -93,9 +93,10 @@ body {
 .hero-section1 {
     width: 22%;
     height: 800px;
-    background-color: aqua;
+    background-color: whitesmoke;
     padding-top: 30px;
     padding-left: 30px;
+    overflow: auto;
 }   
 .hero-profile {
     background-image: url(profile.jpg);
@@ -119,11 +120,11 @@ body {
 .hero-section2 {
     width: 56%;
     height: 800px;
-    background-color: aquamarine;
+    background-color: whitesmoke;
 }
 
 .hero-section3 {
     width: 22%;
     height: 800px;
-    background-color: rgb(49, 121, 121);
+    background-color: whitesmoke;
 }
