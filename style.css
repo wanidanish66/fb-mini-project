@@ -58,14 +58,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .nav-box2 i {
-   
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 .nav-box3 {
     height: 56px;
@@ -148,16 +149,52 @@ body {
     display: flex;
 }
 .hero3-page a{
-    margin-left: 60px;
+    margin-left: 50px;
     display: flex;
     
-    align-items: center;
 }
 .page-box1 {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
     background-image: url(profile.jpg);
     background-size: cover;
     color: black;
+    display: flex;
+    align-items: center;
+}
+.profile-box {
+    display: flex;
+    
+}
+.profile-box i {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.birthday h3 {
+    color: #67656B;
+}
+.birthday i {
+    justify-content: flex-start;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.bday-people {
+    display: flex;
+}
+hr {
+    width: 90%;   
+}
+.contacts {
+    display: flex;
+}
+.contacts h3 {
+    justify-content: flex-start;
+    margin-right: 50%;
+    color: #67656B;
+}
+.cont-icon{
+    display: flex;
+    justify-content: flex-start;
 }
