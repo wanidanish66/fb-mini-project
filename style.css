@@ -4,6 +4,7 @@ body {
     background-color: aliceblue;
     width: auto;
     height: auto;
+    font-family: Facebook Letter Faces Regular, sans-serif; 
 }
 .navbar {
     height: 56px;
@@ -196,5 +197,113 @@ hr {
 }
 .cont-icon{
     display: flex;
+    justify-content: flex-start;
+}
+
+/* contacts option */
+
+.pro {
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    background-color: blueviolet;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px 0px;
+    background-size: cover;
+}
+.contact-opt a {
+    display: flex;
+    align-items: center;
+}
+
+/* group section */
+.group-cont {
+    display: flex;
+    align-items: center;
+}
+.group-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+}
+
+/* hero section 2 */
+/* story section */
+.hero2-container1 {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.section2-box1 {
+    height: 235px;
+    width: 135px;
+    border-radius: 10px;
+    background-size: cover;
+}
+.box1-box {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-size: cover;
+    border: 2px solid blue;
+}
+
+/* upload post section */
+
+.hero2-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2-box1 {
+    width: 80%;
+    height: 150px;
+    background-color:white;
+    border-radius: 10px;
+    margin-top: 1rem;
+    
+}
+.box1-profile {
+    width: 40px;
+    height: 40px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    justify-content: flex-start;
+    background-image: url(profile.jpg);
+    background-size: cover;
+    border-radius: 50%;
+}
+.container2-box1 input {
+    height: 38px;
+    width: 300px;
+    background-color: #E4E6EB;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    font-size: 18px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.search-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2-box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     justify-content: flex-start;
 }
