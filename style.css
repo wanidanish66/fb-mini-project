@@ -1,7 +1,7 @@
 /** navbar **/
 
 body {
-    background-color: aliceblue;
+    background-color: #E9EBEE;
     width: auto;
     height: auto;
     font-family: Facebook Letter Faces Regular, sans-serif; 
@@ -95,7 +95,7 @@ body {
 .hero-section1 {
     width: 22%;
     height: 800px;
-    background-color: whitesmoke;
+    background-color: #E9EBEE;
     padding-top: 30px;
     padding-left: 30px;
     overflow: auto;
@@ -123,13 +123,13 @@ body {
 .hero-section2 {
     width: 56%;
     height: 800px;
-    background-color: whitesmoke;
+    background-color: #E9EBEE;
 }
   /* hero section 3 */
 .hero-section3 {
     width: 22%;
     height: 800px;
-    background-color: whitesmoke;
+    background-color: #E9EBEE;
     
 }
 .hero-section3 a {
@@ -239,11 +239,31 @@ hr {
     align-items: center;
     justify-content: space-evenly;
 }
+
+/* user story */
+.section2-box0 {
+    height: 180px;
+    width: 135px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+}
 .section2-box1 {
     height: 235px;
     width: 135px;
     border-radius: 10px;
     background-size: cover;
+}
+.section2-box0-1 {
+    height: 55px;
+    width: 135px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
 }
 .box1-box {
     height: 2rem;
@@ -288,22 +308,54 @@ hr {
     background-color: #E4E6EB;
     border-radius: 50px;
     border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-left: 5%;
     font-size: 18px;
     margin-top: 1rem;
     margin-left: 1rem;
 }
-.search-profile {
+.Search-profile {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .container2-box2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
+}
+.container2-box2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Uploaded posts */
+
+.uploded-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post1 {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    height: 805px;
+    width: 80%;
+    background-color: white;
+}
+.post1-head {
+    height: 60px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.post1-profile {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-left: 1rem;
+    margin-top: 10px;
 }
