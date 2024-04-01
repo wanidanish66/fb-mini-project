@@ -7,6 +7,7 @@ body {
     font-family: Facebook Letter Faces Regular, sans-serif; 
 }
 .navbar {
+    position: fixed;
     height: 56px;
     width: 100%;
     background-color: white;
@@ -94,7 +95,8 @@ body {
 }   
    
 .hero-section1 {
-    width: 22%;
+    margin-top: 56px;
+    width: 21%;
     height: 800px;
     background-color: #E9EBEE;
     padding-top: 30px;
@@ -122,13 +124,17 @@ body {
 }
 
 .hero-section2 {
-    width: 56%;
+    margin-top: 56px;
+    overflow: scroll;
+    width: 55%;
     height: 800px;
     background-color: #E9EBEE;
 }
   /* hero section 3 */
 .hero-section3 {
-    width: 22%;
+    overflow: auto;
+    margin-top: 56px;
+    width: 24%;
     height: 800px;
     background-color: #E9EBEE;
     
