@@ -125,14 +125,14 @@ body {
 
 .hero-section2 {
     margin-top: 56px;
-    overflow: scroll;
+    overflow: auto;
     width: 55%;
     height: 800px;
     background-color: #E9EBEE;
 }
   /* hero section 3 */
 .hero-section3 {
-    overflow: auto;
+    /*overflow: auto;*/
     margin-top: 56px;
     width: 24%;
     height: 800px;
@@ -366,3 +366,78 @@ hr {
     margin-left: 1rem;
     margin-top: 10px;
 }
+.post1-img {
+    height: 560px;
+    width: auto;
+    background-size: cover;
+}
+.post1-border {
+    display: flex;
+    justify-content: space-around;
+}
+.post1-border a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #67656B;
+}
+.post1-border p {
+    margin-left: 8px;
+}
+.post1-comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post1-comment input {
+    height: 38px;
+    width: 80%;
+    background-color: #E4E6EB;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+}
+/* HTML: <div class="loader"></div> */
+.loader-box {
+    margin-top: 3rem;
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    box-shadow: 0 0 0 3px black;
+    border-radius: 50%;
+    position: relative;
+    animation: l11 7s infinite;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 3px);
+    left: calc(50% - 12.5px);
+    box-shadow: inherit;
+    width: 25px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transform-origin: 50% -28px;
+    animation: l11 1.5s infinite;
+  }
+  .loader:after {
+    animation-delay: -0.75s;
+  }
+  @keyframes l11 {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
