@@ -132,7 +132,7 @@ body {
 }
   /* hero section 3 */
 .hero-section3 {
-    /*overflow: auto;*/
+    overflow: auto;
     margin-top: 56px;
     width: 24%;
     height: 800px;
