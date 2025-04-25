@@ -60,4 +60,6 @@ document.querySelectorAll('.mobile-nav-item').forEach(item => {
 // Add hover effects to interactive elements
 document.querySelectorAll('button, a, [role="button"]').forEach(element => {
     element.addEventListener('mouseenter', () => {
-        element.style.transition = 'background-color 
+        element.style.transition = 'background-color';
+    });
+});
