@@ -3,270 +3,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook.com</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Facebook - Log in or Sign Up</title>
+    <!-- Add Facebook favicon -->
+    <link rel="icon" href="https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="navbar">
-        <div class="nav-box1">
-            <div class="fb-logo"></div>
-            <div class="nav-search"><i class="fa-solid fa-magnifying-glass"></i></div>
-            <input placeholder="Search facebook">
-            
-        </div>
-        
-        <div class="nav-box2">
-            <i class="fa-solid fa-house-chimney" style="margin-right: 15px;"></i>
-            <i class="fa-solid fa-video"></i>
-            <i class="fa-solid fa-store"></i>
-            <i class="fa-solid fa-user-group" style="margin-right: 15px;"></i>
-            <i class="fa-solid fa-gamepad"></i>
-            
-        </div>
-        <div class="nav-box3">
-            <i class="fa-solid fa-plus" style="margin-right: 10px;"></i>
-            <i class="fa-solid fa-bars" style="margin-right: 10px;"></i>
-            <i class="fa-brands fa-facebook-messenger" style="margin-right: 10px;"></i>
-            <i class="fa-solid fa-bell" style="margin-right: 10px;"></i>
-            <i class="fa-solid fa-user"></i>
-        </div>
+    <!-- Dark mode toggle - move to more appropriate location -->
+    <div id="mode" class="dark-mode-toggle">
+        <input type="checkbox" id="switch" class="checkbox"/>
+        <label for="switch" class="toggle"></label>
     </div>
-
-    <div class="hero-section">
-        <div class="hero-section1">
-            <a href="profile.html" style="margin-left: -6px;"><div class="hero-profile"></div><p>Danish Wani</p> </a>
+    
+    <!-- Improved navbar structure -->
+    <header class="navbar">
+        <div class="nav-container">
+            <!-- Logo with proper link -->
+            <a href="#" class="fb-logo">
+                <svg viewBox="0 0 36 36" fill="url(#jsc_c_5)" height="40" width="40">
+                    <defs>
+                        <linearGradient x1="50%" x2="50%" y1="97.0782153%" y2="0%" id="jsc_c_5">
+                            <stop offset="0%" stop-color="#0062E0"></stop>
+                            <stop offset="100%" stop-color="#19AFFF"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z"></path>
+                    <path class="p361ku9c" fill="white" d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z"></path>
+                </svg>
+            </a>
             
-            <a href="#"><i class="fa-solid fa-user-group"></i><p>Friends</p></a><br>
-            <a href="#"><i class="fa-solid fa-clock-rotate-left"></i><p>Memories</p></a><br>
-            <a href="#"><i class="fa-solid fa-bookmark"></i><p>Saved</p></a><br>
-            <a href="#"><i class="fa-solid fa-users-rays"></i><p>Groups</p></a><br>
-            <a href="#"><i class="fa-solid fa-play"></i><p>Video</p></a><br>
-            <a href="#"><i class="fa-solid fa-shop-lock"></i><p>Marketplace</p></a><br>
-            <a href="#"><i class="fa-regular fa-newspaper"></i><p>Feeds</p></a><br>
-            <a href="#"><i class="fa-brands fa-facebook-messenger"></i><p>Messenger</p></a>
-            <a href="#"><i class="fa-regular fa-flag"></i><p>Pages</p></a>
-            <a href="#"><i class="fa-regular fa-credit-card"></i><p>Facebook Pay</p></a>
-            <a href="#"><i class="fa-solid fa-hand-holding-droplet"></i><p>Blood Donation</p></a>
-            <div class="footer-1">
-                <p>Conditions of Use Privacy Notice Your Ads Privacy Choices</p>
-                <p>Privacy  · Terms  · Advertising  · Ad choices   · Cookies  ·   · Meta © 2024</p>
-                <p>creator @danish_wani</p>
+            <!-- Search bar with better semantics -->
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search Facebook" aria-label="Search Facebook">
+            </div>
+            
+            <!-- Main navigation -->
+            <nav class="main-nav">
+                <a href="#" class="nav-item active" aria-current="page">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <span class="nav-label">Home</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-tv"></i>
+                    <span class="nav-label">Watch</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-store"></i>
+                    <span class="nav-label">Marketplace</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="nav-label">Groups</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span class="nav-label">Gaming</span>
+                </a>
+            </nav>
+            
+            <!-- User menu -->
+            <div class="user-menu">
+                <button class="menu-btn" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <button class="messenger-btn" aria-label="Messenger">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </button>
+                <button class="notifications-btn" aria-label="Notifications">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="notification-badge">5</span>
+                </button>
+                <div class="user-avatar">
+                    <img src="profile.jpg" alt="Your profile">
+                </div>
             </div>
         </div>
-        <div class="hero-section2">
-            <div class="hero2-container1">
-                <div class="story-profile"><div class="section2-box0" style="background-image: url(profile.jpg);">
-                </div><div class="section2-box0-1">Create Story</div></div>
-                <div class="section2-box1" style="background-image: url(adeel.jpg);"><div class="box1-box" style="background-image: url(adeel.jpg);"></div></div>
-                <div class="section2-box1" style="background-image: url(moomin1.jpg);"><div class="box1-box" style="background-image: url(moomin1.jpg);"></div></div>
-                <div class="section2-box1" style="background-image: url(shahid1.jpg);"><div class="box1-box" style="background-image: url(shahid.jpg);"></div></div>
-                <div class="section2-box1" style="background-image: url(dawood1.jpg);"><div class="box1-box" style="background-image: url(dawood.jpg);"></div></div>
-            </div>
-            <div class="hero2-container2">
-                <div class="container2-box1">
-                    <div class="Search-profile">
-                        <div class="box1-profile"></div><input placeholder="What's on your mind, Wani?">
+    </header>
+    
+    <!-- Main content area -->
+    <main class="main-content">
+        <!-- Left sidebar -->
+        <aside class="left-sidebar">
+            <!-- Shortcuts list with better structure -->
+            <nav class="shortcuts">
+                <a href="profile.html" class="shortcut-item profile-link">
+                    <img src="profile.jpg" alt="Your profile">
+                    <span>Danish Wani</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <i class="fa-solid fa-user-group"></i>
+                    <span>Friends</span>
+                </a>
+                <a href="#" class="shortcut-item">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Memories</span>
+                </a>
+                <!-- More shortcut items... -->
+            </nav>
+            
+            <!-- Footer with better organization -->
+            <footer class="sidebar-footer">
+                <div class="footer-links">
+                    <a href="#">Privacy</a> · 
+                    <a href="#">Terms</a> · 
+                    <a href="#">Advertising</a> · 
+                    <a href="#">Ad choices</a> · 
+                    <a href="#">Cookies</a>
+                </div>
+                <div class="copyright">
+                    Meta © 2024
+                </div>
+            </footer>
+        </aside>
+        
+        <!-- Main feed -->
+        <section class="main-feed">
+            <!-- Stories section -->
+            <div class="stories-container">
+                <div class="story create-story">
+                    <div class="story-bg" style="background-image: url(profile.jpg);"></div>
+                    <div class="story-content">
+                        <div class="create-icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <span>Create Story</span>
                     </div>
-                    <hr>
-                <div class="container2-box2">
-                    <div><i class="fa-solid fa-video"></i><p style="margin-left: 10px;">Live video</p></div>
-                    <div><i class="fa-solid fa-photo-film"></i><p style="margin-left: 10px;">Photo/Video</p></div>
-                    <div><i class="fa-regular fa-face-smile"></i><p style="margin-left: 10px;">Feelings/Activity</p></div>
                 </div>
+                
+                <!-- Story items would be generated dynamically in a real app -->
+                <div class="story">
+                    <div class="story-bg" style="background-image: url(adeel.jpg);"></div>
+                    <div class="story-content">
+                        <img src="adeel.jpg" alt="Mr Adeel" class="story-avatar">
+                        <span>Mr Adeel</span>
+                    </div>
+                </div>
+                <!-- More stories... -->
+                <div class="story">
+                    <div class="story-bg" style="background-image: url(abid.png);"></div>
+                    <div class="story-content">
+                        <img src="abid.png" alt="Mr Adeel" class="story-avatar">
+                        <span>abid</span>
+                    </div>
+                </div>
+                <div class="story">
+                    <div class="story-bg" style="background-image: url(dawood1.jpg);"></div>
+                    <div class="story-content">
+                        <img src="dawood.jpg" alt="Mr Adeel" class="story-avatar">
+                        <span>dawood</span>
+                    </div>
+                </div>
+                <div class="story">
+                    <div class="story-bg" style="background-image: url(shahid1.jpg);"></div>
+                    <div class="story-content">
+                        <img src="shahid.jpg" alt="Mr Adeel" class="story-avatar">
+                        <span>shahid</span>
+                    </div>
                 </div>
             </div>
-            <div class="uploded-post">
-                    <div class="post1">
-                        <div class="post1-head">
-                            <div class="post1-profile" style="background-image: url(adeel.jpg);"></div><p style="margin-left: 1rem; color: #67656B;"><b style="margin-right: 5px; color: black;">Mr adeel</b>Updated his Profile picture</p>
-                            <div style="margin-left: 20%;">
-                                <i class="fa-solid fa-ellipsis"></i>
-                                <i class="fa-solid fa-xmark" style="margin-left: 1rem;"></i>
+            
+            <!-- Create post -->
+            <div class="create-post">
+                <div class="post-input">
+                    <img src="profile.jpg" alt="Your profile">
+                    <input type="text" placeholder="What's on your mind, Danish?">
+                </div>
+                <div class="post-options">
+                    <button class="post-option">
+                        <i class="fa-solid fa-video" style="color: #f3425f;"></i>
+                        <span>Live video</span>
+                    </button>
+                    <button class="post-option">
+                        <i class="fa-solid fa-photo-film" style="color: #45bd62;"></i>
+                        <span>Photo/video</span>
+                    </button>
+                    <button class="post-option">
+                        <i class="fa-regular fa-face-smile" style="color: #f7b928;"></i>
+                        <span>Feeling/activity</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Posts feed -->
+            <div class="posts-feed">
+                <!-- Post template - would be generated dynamically -->
+                <article class="post">
+                    <header class="post-header">
+                        <div class="post-author">
+                            <img src="adeel.jpg" alt="Mr Adeel">
+                            <div class="author-info">
+                                <a href="#" class="author-name">Mr Adeel</a>
+                                <span class="post-time">Updated his profile picture · 3h · <i class="fa-solid fa-globe"></i></span>
                             </div>
                         </div>
-                        <div class="post1-img" style="background-image: url(adeel.jpg);"></div>
-                        <p style="padding-left: 10%;">bhat shahid, bhat dawood and 300k others</p>
-                        <hr>
-                        <div class="post1-border">
-                        <a href="#"><i class="fa-regular fa-thumbs-up"></i><p>Like</p></a>
-                        <a href="#"><i class="fa-regular fa-comment"></i><p>Comment</p></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i><p>Send</p></a>
-                        <a href="#"><i class="fa-solid fa-share"></i><p>Share</p></a>
-                        </div>
-                        <hr>
-                        <div class="post1-comment">
-                            <div class="hero-profile" style="margin-left: 1%; margin-right: 1rem;"></div>
-                            <input placeholder="Comment as Danish Wani">
-                        </div>
-                    </div>                     
-            </div>
-            <div class="uploded-post">
-                <div class="post1">
-                    <div class="post1-head">
-                        <div class="post1-profile" style="background-image: url(dawood.jpg);"></div><p style="margin-left: 1rem; color: #67656B;"><b style="margin-right: 5px; color: black;">bhat dawood</b>Updated his Profile picture</p>
-                        <div style="margin-left: 17%;">
+                        <button class="post-menu" aria-label="Post options">
                             <i class="fa-solid fa-ellipsis"></i>
-                            <i class="fa-solid fa-xmark" style="margin-left: 1rem;"></i>
+                        </button>
+                    </header>
+                    
+                    <div class="post-content">
+                        <p>New profile picture! What do you think?</p>
+                        <div class="post-image">
+                            <img src="adeel.jpg" alt="Mr Adeel's new profile picture">
                         </div>
                     </div>
-                    <div class="post1-img" style="background-image: url(dawood.jpg);"></div>
-                    <p style="padding-left: 10%;">bhat shahid, bhat dawood and 300k others</p>
-                    <hr>
-                    <div class="post1-border">
-                    <a href="#"><i class="fa-regular fa-thumbs-up"></i><p>Like</p></a>
-                    <a href="#"><i class="fa-regular fa-comment"></i><p>Comment</p></a>
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i><p>Send</p></a>
-                    <a href="#"><i class="fa-solid fa-share"></i><p>Share</p></a>
-                    </div>
-                    <hr>
-                    <div class="post1-comment">
-                        <div class="hero-profile" style="margin-left: 1%; margin-right: 1rem;"></div>
-                        <input placeholder="Comment as Danish Wani">
-                    </div>
-                </div>                     
-        </div>
-        <div class="uploded-post">
-            <div class="post1">
-                <div class="post1-head">
-                    <div class="post1-profile" style="background-image: url(shahid.jpg);"></div><p style="margin-left: 1rem; color: #67656B;"><b style="margin-right: 5px; color: black;">Bhat shahid</b>Updated his Profile picture</p>
-                    <div style="margin-left: 19%;">
-                        <i class="fa-solid fa-ellipsis"></i>
-                        <i class="fa-solid fa-xmark" style="margin-left: 1rem;"></i>
-                    </div>
-                </div>
-                <div class="post1-img" style="background-image: url(shahid.jpg);"></div>
-                <p style="padding-left: 10%;">bhat shahid, bhat dawood and 300k others</p>
-                <hr>
-                <div class="post1-border">
-                <a href="#"><i class="fa-regular fa-thumbs-up"></i><p>Like</p></a>
-                <a href="#"><i class="fa-regular fa-comment"></i><p>Comment</p></a>
-                <a href="#"><i class="fa-brands fa-whatsapp"></i><p>Send</p></a>
-                <a href="#"><i class="fa-solid fa-share"></i><p>Share</p></a>
-                </div>
-                <hr>
-                <div class="post1-comment">
-                    <div class="hero-profile" style="margin-left: 1%; margin-right: 1rem;"></div>
-                    <input placeholder="Comment as Danish Wani">
-                </div>
-            </div>                     
-    </div>
-    <div class="uploded-post">
-        <div class="post1">
-            <div class="post1-head">
-                <div class="post1-profile" style="background-image: url(abid.png);"></div><p style="margin-left: 1rem; color: #67656B;"><b style="margin-right: 5px; color: black;">Bhat abid</b>Updated his Profile picture</p>
-                <div style="margin-left: 20%;">
-                    <i class="fa-solid fa-ellipsis"></i>
-                    <i class="fa-solid fa-xmark" style="margin-left: 1rem;"></i>
-                </div>
-            </div>
-            <div class="post1-img" style="background-image: url(abid.png);"></div>
-            <p style="padding-left: 10%;">bhat shahid, bhat dawood and 300k others</p>
-            <hr>
-            <div class="post1-border">
-            <a href="#"><i class="fa-regular fa-thumbs-up"></i><p>Like</p></a>
-            <a href="#"><i class="fa-regular fa-comment"></i><p>Comment</p></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i><p>Send</p></a>
-            <a href="#"><i class="fa-solid fa-share"></i><p>Share</p></a>
-            </div>
-            <hr>
-            <div class="post1-comment">
-                <div class="hero-profile" style="margin-left: 1%; margin-right: 1rem;"></div>
-                <input placeholder="Comment as Danish Wani">
-            </div>
-        </div>                     
-</div>
-<div class="uploded-post">
-    <div class="post1">
-        <div class="post1-head">
-            <div class="post1-profile" style="background-image: url(moomin1.jpg);"></div><p style="margin-left: 1rem; color: #67656B;"><b style="margin-right: 5px; color: black;">Moomin Ramzan</b>Updated his Profile picture</p>
-            <div style="margin-left: 11%;">
-                <i class="fa-solid fa-ellipsis"></i>
-                <i class="fa-solid fa-xmark" style="margin-left: 1rem;"></i>
-            </div>
-        </div>
-        <div class="post1-img" style="background-image: url(moomin1.jpg);"></div>
-        <p style="padding-left: 10%;">bhat shahid, bhat dawood and 300k others</p>
-        <hr>
-        <div class="post1-border">
-        <a href="#"><i class="fa-regular fa-thumbs-up"></i><p>Like</p></a>
-        <a href="#"><i class="fa-regular fa-comment"></i><p>Comment</p></a>
-        <a href="#"><i class="fa-brands fa-whatsapp"></i><p>Send</p></a>
-        <a href="#"><i class="fa-solid fa-share"></i><p>Share</p></a>
-        </div>
-        <hr>
-        <div class="post1-comment">
-            <div class="hero-profile" style="margin-left: 1%; margin-right: 1rem;"></div>
-            <input placeholder="Comment as Danish Wani">
-        </div>
-    </div>                     
-</div>     
-<div class="uploded-post">
-    <div class="post1">
-        <div class="post1-head">
-            <div class="post1-profile" style="background-image: url(aqib.jpg);"></div><p style="margin-left: 1rem; color: #67656B;"><b style="margin-right: 5px; color: black;">Aqib Hassan</b>Updated his Profile picture</p>
-            <div style="margin-left: 18%;">
-                <i class="fa-solid fa-ellipsis"></i>
-                <i class="fa-solid fa-xmark" style="margin-left: 1rem;"></i>
-            </div>
-        </div>
-        <div class="post1-img" style="background-image: url(aqib.jpg);"></div>
-        <p style="padding-left: 10%;">bhat shahid, bhat dawood and 300k others</p>
-        <hr>
-        <div class="post1-border">
-        <a href="#"><i class="fa-regular fa-thumbs-up"></i><p>Like</p></a>
-        <a href="#"><i class="fa-regular fa-comment"></i><p>Comment</p></a>
-        <a href="#"><i class="fa-brands fa-whatsapp"></i><p>Send</p></a>
-        <a href="#"><i class="fa-solid fa-share"></i><p>Share</p></a>
-        </div>
-        <hr>
-        <div class="post1-comment">
-            <div class="hero-profile" style="margin-left: 1%; margin-right: 1rem;"></div>
-            <input placeholder="Comment as Danish Wani">
-        </div>
-    </div>                     
-</div>  
-<div class="loader-box"><div class="loader"></div>
-        </div>
-        </div>
-        
-        <div class="hero-section3">
-            <a href="#"><p>Your Pages and profiles</p><i class="fa-solid fa-ellipsis"></i></a>
-            <div class="hero3-page"><div class="page-box1"><a href="#">wanidanishart</a></div></div>
-            <div class="profile-box" style="margin-top: 10px;"><i class="fa-solid fa-repeat"></i><a href="#">switch to Page</a></div>
-            <div class="profile-box" style="margin-top: 10px;"><i class="fa-solid fa-bullhorn"></i><a href="#">Create promotion</a></div>
-            <hr>
-            <div class="birthday">
-                <h3>Birthdays</h3>
-                <div class="bday-people"><i class="fa-solid fa-gift"></i><a href="#">Wani danish and 4 others <br> have Birthday Today</a></div>
-            </div>
-            <hr>
-            <div class="contacts">
-                <h3>Contacts</h3>
-                <div class="cont-icon"><i class="fa-solid fa-magnifying-glass" style="margin-right: 1rem;"></i>
-                    <i class="fa-solid fa-ellipsis" style="justify-content: end;"></i>
-                </div>
-            </div>
-            <div class="contact-opt">
-                <a href="#"><div class="pro" style="background-image: url(adeel.jpg);"></div><p style="margin-left: 0.5rem;">mr adeel</p></a>
-                <a href="#"><div class="pro" style="background-image: url(moomin1.jpg);"></div><p style="margin-left: 0.5rem;">moomin ramzan</p></a>
-                <a href="#"><div class="pro" style="background-image: url(abid.png);"></div><p style="margin-left: 0.5rem;">bhat abid</p></a>
-                <a href="#"><div class="pro" style="background-image: url(dawood.jpg);"></div><p style="margin-left: 0.5rem;">bhat dawood</p></a>
-                <a href="#"><div class="pro" style="background-image: url(shahid.jpg);"></div><p style="margin-left: 0.5rem;">bhat shahid</p></a>
-                <a href="#"><div class="pro" style="background-image: url(aqib.jpg);"></div><p style="margin-left: 0.5rem;">aqib</p></a>
+                    
+                    <footer class="post-footer">
+                        <div class="post-stats">
+                            <div class="reactions">
+                                <span class="reaction-icons">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-heart"></i>
+                                </span>
+                                <span class="reaction-count">300K</span>
+                            </div>
+                            <div class="comments-share">
+                                <span>1.2K comments</span>
+                                <span>24K shares</span>
+                            </div>
+                        </div>
+                        
+                        <div class="post-actions">
+                            <button class="post-action">
+                                <i class="fa-regular fa-thumbs-up"></i>
+                                <span>Like</span>
+                            </button>
+                            <button class="post-action">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>Comment</span>
+                            </button>
+                            <button class="post-action">
+                                <i class="fa-solid fa-share"></i>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                        
+                        <div class="post-comment">
+                            <img src="profile.jpg" alt="Your profile">
+                            <div class="comment-input">
+                                <input type="text" placeholder="Write a comment...">
+                                <div class="comment-options">
+                                    <button><i class="fa-regular fa-face-smile"></i></button>
+                                    <button><i class="fa-solid fa-camera"></i></button>
+                                    <button><i class="fa-solid fa-gift"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </article>
                 
+                <!-- More posts would be loaded here -->
+                <div class="loader-container">
+                    <div class="loader"></div>
+                </div>
             </div>
-            <hr>
-            <h3>Group conversations</h3><br>
-            <div class="group-cont"><div class="group-add"><i class="fa-solid fa-plus"></i></div><p style="margin-left: 10px; font-size: 20px;">Create new group</p></div>
-        </div>
-    </div>
-    <div id="mode">
-        <input type="checkbox" id="switch" class="checkbox"/>
-    <label for="switch" class="toggle">
+        </section>
         
-    </label>
-    </div>
+        <!-- Right sidebar -->
+        <aside class="right-sidebar">
+            <!-- Contacts list -->
+            <div class="contacts-container">
+                <div class="contacts-header">
+                    <h3>Contacts</h3>
+                    <div class="contact-actions">
+                        <button aria-label="Search contacts"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button aria-label="Contact options"><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                </div>
+                
+                <div class="contacts-list">
+                    <div class="contact online">
+                        <img src="adeel.jpg" alt="Mr Adeel">
+                        <span>Mr Adeel</span>
+                    </div>
+                    <!-- More contacts... -->
+                    <div class="contact online">
+                        <img src="abid.png" alt="abid">
+                        <span>abid</span>
+                    </div>
+                    <div class="contact online">
+                        <img src="aqib.jpg" alt="aqib">
+                        <span>aqib</span>
+                    </div>
+                    <div class="contact online">
+                        <img src="shahid.jpg" alt="shahid">
+                        <span>shahid</span>
+                    </div>
+                    <div class="contact online">
+                        <img src="dawood.jpg" alt="dawood">
+                        <span>dawood</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Group conversations -->
+            <div class="groups-container">
+                <h3>Group conversations</h3>
+                <button class="create-group">
+                    <div class="group-icon">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <span>Create new group</span>
+                </button>
+            </div>
+        </aside>
+    </main>
+    
+    <!-- Mobile navigation (hidden on desktop) -->
+    <nav class="mobile-nav">
+        <a href="#" class="mobile-nav-item active">
+            <i class="fa-solid fa-house-chimney"></i>
+        </a>
+        <!-- More mobile nav items... -->
+    </nav>
+
+    <script src="script.js"></script>
 </body>
 </html>
